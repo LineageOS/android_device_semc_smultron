@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//+lA\u003d",
+        "filename": "smultron.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 605
+      },
+      "writtenOn": "2013-03-08T12:04:13Z",
+      "side": 0,
+      "message": "dont move it !\nyou have 1 cdma phone",
+      "revId": "0f84d39282163a8ecadeba4a7cd4e1958ae9501c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
