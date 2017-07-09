@@ -1,4 +1,4 @@
-# Copyright (C) 2007 The Android Open Source Project
+# Copyright (C) 2011-2013 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,12 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := device/semc/smultron/
+LOCAL_PATH := $(call my-dir)
 
-#
-# Boot files
-#
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
-PRODUCT_COPY_FILES += \
-    $(TARGET_PREBUILT_KERNEL):kernel
-
+include $(CLEAR_VARS)
