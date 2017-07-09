@@ -12,8 +12,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := $(call my-dir)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-ifeq ($(TARGET_DEVICE),smultron)
-    include $(call all-makefiles-under,$(LOCAL_PATH))
-endif
+# Inherit from smultron device
+$(call inherit-product, device/semc/smultron/smultron.mk)
+
+# Boot Animation
+TARGET_BOOTANIMATION_HALF_RES := true
+TARGET_SCREEN_HEIGHT := 480
+TARGET_SCREEN_WIDTH := 320
+
+# Set those variables here to overwrite the inherited values.
+PRODUCT_NAME := full_smulton
+PRODUCT_DEVICE := smultron
+PRODUCT_BRAND := SEMC
+PRODUCT_MANUFACTURER := Sony Ericsson
+PRODUCT_MODEL := ST15i
